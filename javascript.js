@@ -17,12 +17,13 @@ function catGreeting() {
 }
 
 function hereFor() {
-  var answer = prompt("Are you here for Cat Food or Cat Toys?");
+  var answer = '';
   var foodSpecial = "Today we're having a 25% off special on all wet food!"
   var toySpecial = "Today we're having a Buy One Get One Free special on all mouse toys!"
   while (answer.toLowerCase() != "cat food" && answer.toLowerCase() != "cat toys") {
-    prompt("Are you here for Cat Food or Cat Toys?");
+    answer = prompt("Are you here for Cat Food or Cat Toys?");
   }
+
   if (answer == "cat food") {
     return foodSpecial;
   } else if (answer == "cat toys") {
