@@ -16,6 +16,30 @@ function catGreeting() {
   return output;
 }
 
+function hereFor() {
+  var answer = prompt("Are you here for Cat Food or Cat Toys?");
+  var foodSpecial = "Today we're having a 25% off special on all wet food!"
+  var toySpecial = "Today we're having a Buy One Get One Free special on all mouse toys!"
+  while (answer.toLowerCase() != "cat food" && answer.toLowerCase() != "cat toys") {
+    prompt("Are you here for Cat Food or Cat Toys?");
+  }
+  if (answer == "cat food") {
+    return foodSpecial;
+  } else if (answer == "cat toys") {
+    return toySpecial;
+  }
+}
+
+function howManyCats() {
+  var number = prompt("How many cats are in your household?");
+  var output = '';
+  for (var i = 0; i < number; i++) {
+    var num = i + 1;
+    output += '<li>' + num + ' cat <li>';
+  }
+  return output;
+}
+
 
 
 // confirm("Press OK to proceed!");
