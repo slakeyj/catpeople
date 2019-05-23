@@ -30,12 +30,12 @@ function hereFor() {
   }
 }
 
-function howManyCats() {
-  var number = prompt("How many cats are in your household?");
+function howManyToys() {
+  var number = prompt("How many toys would you like to buy today?");
   var output = '';
   for (var i = 0; i < number; i++) {
     var num = i + 1;
-    output += '<li>' + num + ' cat <li>';
+    output += '<li>' + num + ' toy <li>';
   }
   return output;
 }
