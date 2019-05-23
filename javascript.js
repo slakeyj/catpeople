@@ -8,10 +8,6 @@ function catGreeting() {
   matchingNameGreeting += "We promise we will meet all of " + name + "'s needs.";
   if (name.toLowerCase() === "tucker" || name.toLowerCase() === "abby" || name.toLowerCase() === "maggie") {
     output = matchingNameGreeting;
-    // } else if (name.toLowerCase() === "abby") {
-    //   output = matchingNameGreeting;
-    // } else if (name.toLowerCase() === "maggie") {
-    //   output = matchingNameGreeting;
   } else if (name === null || name === "") {
     output = "Welcome to Cat People!";
   } else {
